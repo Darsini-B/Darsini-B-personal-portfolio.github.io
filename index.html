@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="icon" href="images/portfolio-icon.png" >
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body style="background-color: rgb(196, 191, 204)">
+    <nav id="desktop-nav">
+     <div class="logo"> <b>Darsini</b></div>
+     <div>
+        <ul class="nav-links">
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+  </nav>
+    <nav id="hamburger-nav">
+    <div class="logo">Darsini</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    <div class="menu-links">
+            <li><a href="#profile" onclick="toggleMenu()">Profile</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </div>
+    </div>
+  </nav>
+
+  <section id="profile">
+    <div class="section__pic-container">
+        <img src="./images/profile-pic.png" alt="Darsini's Profile Picture">
+    </div>
+
+    <div class="section__text">
+        <p class="section__text__p1">Hello! I'm</p>
+        <h2 class="title">Darsini</h2>
+        <p class="section__text__p2">a passionate Software Developer.</p>
+        <div class="btn-container">
+            <!--<button class="btn btn-color-2"
+                    onclick="window.open('./images/resume.pdf')">Download CV
+            </button>-->
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Me
+            </button>
+        </div>
+        <div id="socials-container">
+            
+            <a href="https://github.com/Darsini-B" target="_blank" rel="noopener noreferrer">
+           <img 
+              src="./images/github.png" 
+              alt="My GitHub Profile" 
+             class="icon" 
+             style="cursor: pointer;"/></a>
+            <a href="https://www.linkedin.com/in/darsinib?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+           <img 
+              src="./images/linkedin.png"
+              alt="My LinkedIn Profile"
+              class="icon"
+              style="cursor: pointer;"/></a>
+        </div>
+    </div>
+    </div>
+    <img src="./images/arrow-icon.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#about'"/>
+
+  </section>
+
+  <section id="about">
+    <p class="section__text__p1">Get to Know Me</p>
+    <h2 class="title">About Me</h2>
+    <br>
+    <hr>
+    <br>
+    <div class="about-details-container">
+        <div class="about-containers">
+            <img src="./images/about-me-icon.png" alt="About Me icon" class="icon"/>
+            <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> About </p>
+        </div>
+    </div>
+    <br>
+    <div class="text-container">
+        <p>
+            I'm Darsini, an engineering student passionate about technology, learning, and solving problems. I enjoy exploring new ideas and taking on challenges that help me grow. I value teamwork, creativity, and continuous improvement. My goal is to contribute to the tech world by being part of innovative and impactful solutions.
+         </p>
+     </div>
+     <br>
+     <br>
+     <div class="about-details-container">
+            <div class="about-containers">
+            <img src="./images/education-icon.png" alt="Education icon" class="icon"/>
+            <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> Academics </p>
+    </div>
+    <br>
+    <div class="text-container">
+        <ul>
+            <li><p>Pursuing B.E. in Computer Science and Engineering 3rd Year.</p></li>
+            <li><p>Studying at Government College of Engineering, Erode.</p></li>
+            <li><p>Current CGPA: 8.60.</p></li>
+            <li><p>Completed Higher Secondary with 92.6% from St.Therases Girls Higher Secondary School, Karur.</p></li>
+        </ul>
+    </div>
+    <img src="./images/arrow-icon.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
+ </section> 
+
+  <section id="projects">
+    <p class="section__text__p1">About My</p>
+    <h2 class="title">Projects</h2>
+    <br>
+    <hr>
+    <br>
+        <div class="about-details-container">
+        <div class="projects-containers">
+            <img src="./images/portfolio-icon.png" alt="Portfolio icon" class="icon"/>
+            <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> My Personal Porfolio </p>
+            <br>
+            <p class="text-container">
+                Developed a personal ePortfolio website to present my academic background, skills, and projects using HTML,CSS and JAVASCRIPT. Focused on clean design, responsive layout, and professional presentation to build a strong online presence.
+            </p>
+            <img src="./images/right-arrow-icon.png" alt="Right arrow icon" class="icon"
+            style="cursor: pointer;">
+            <a href="http://127.0.0.1:5500/" target="_blank" rel="noopener noreferrer">My Portfolio</a>
+        </div>
+     </div>
+    <img src="./images/arrow-icon.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'"/>
+</section>
+
+  <section id="skills">
+    <p class="section__text__p1">About My</p>
+        <h2 class="title">Skills</h2>
+        <br>
+        <hr>
+        <br>
+        <div class="skills-details-container">
+            <div class="skills-containers">
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Languages </h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./images/html-icon.png"
+                            alt="HTML icon" class="icon"/>
+                            <div>
+                                <h4>HTML</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/css-icon.png"
+                            alt="CSS icon" class="icon"/>
+                            <div>
+                                <h4>CSS</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/js-icon.png"
+                            alt="JavaScript icon" class="icon"/>
+                            <div>
+                                <h4>JavaScript</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/python-icon.png"
+                            alt="Python icon" class="icon"/>
+                            <div>
+                                <h4>Python</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/java-icon.png"
+                            alt="Java icon" class="icon"/>
+                            <div>
+                                <h4>Java</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/c-icon.png"
+                            alt="C icon" class="icon"/>
+                            <div>
+                                <h4>C</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/c++-icon.png"
+                            alt="C++ icon" class="icon"/>
+                            <div>
+                                <h4>C++</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/mysql-icon.png"
+                            alt="MySQL icon" class="icon"/>
+                            <div>
+                                <h4>MySQL</h4>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Tools & Platforms </h2>
+                    <div class="article-container">
+                        
+                        <article>
+                            <img src="./images/pycharm-icon.png"
+                            alt="PyCharm icon" class="icon"/>
+                            <div>
+                                <h4>PyCharm</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/jupyter-icon.png"
+                            alt="Jupyter NoteBook icon" class="icon"/>
+                            <div>
+                                <h4>Jupyter NoteBook</h4>
+                            </div>
+                        </article>
+                        
+                        <article>
+                            <img src="./images/github.png"
+                            alt="GitHub icon" class="icon"/>
+                            <div>
+                                <h4>GitHub</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/google-colab-icon.png"
+                            alt="Google Colab icon" class="icon"/>
+                            <div>
+                                <h4>Google Colab</h4>
+                            </div>
+                        </article>
+                        <article>
+                           <img src="./images/linux-icon.png"
+                            alt="Linux icon" class="icon"/>
+                            <div>
+                                <h4>Linux</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/vscode-icon.png"
+                            alt="Visual Studio Code icon" class="icon"/>
+                            <div>
+                                <h4>Visual Studio Code</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/anaconda-navigator-icon.png"
+                            alt="Anaconda Navigator icon" class="icon"/>
+                            <div>
+                                <h4>Anaconda Navigator</h4>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./images/arrow-icon.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
+  </section>
+
+  <section id="contact">
+    <p class="section__text__p1">Let's Connect</p>
+    <h2 class="title">Contact Me</h2>
+    <br>
+    <hr>
+    <br>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img src="./images/email-icon.png" alt="Email icon" class="icon contact-icon"/>
+            <p>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=darsini132006@gmail.com"  target="_blank" 
+            rel="noopener noreferrer">darsini132006@gmail.com</a></p>
+        </div>
+       <div class="contact-info-container">
+            <img src="./images/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
+            <p>
+            <a href="https://www.linkedin.com/in/darsinib?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+       </div>
+       <div class="contact-info-container">
+            <img src="./images/github.png" alt="GitHub icon" class="icon contact-icon"/>
+            <p>
+            <a href="https://github.com/Darsini-B" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+       </div>
+    </div>
+ </section> 
+
+ <footer>
+    <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <p> Copyright © 2025 Darsini B. All Rights Reserved.</p>
+ </footer>
+  
+  <script src="script.js"></script>
+
+</body>
+</html>
