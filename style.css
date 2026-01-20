@@ -99,7 +99,7 @@ a:hover {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: rgb(204, 184, 184);
+    background-color: hwb(0 100% 0%);
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -416,5 +416,6 @@ footer {
 footer p{
     text-align: center;
 }
+
 
 
